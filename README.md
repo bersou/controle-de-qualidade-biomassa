@@ -9,7 +9,7 @@ Os resultados demonstram boa qualidade do material fornecido, sendo adequado par
 """)
 
 # === Exibição dos dados principais em cards ===
-st.markdown("## 📋 Dados da Amostra")
+st.markdown(" 📋 Dados da Amostra")
 col1, col2, col3, col4 = st.columns(4)
 col1.metric("Densidade (g)", f"{dados_principais['Densidade (g)']:.2f}")
 col2.metric("Peso Amostra (g)", f"{dados_principais['Peso da Amostra (g)']:.2f}")
@@ -26,7 +26,7 @@ granulometria_df = pd.DataFrame({
 })
 
 # === Gráfico de barras da granulometria ===
-st.markdown("## 📊 Distribuição Granulométrica")
+st.markdown(" 📊 Distribuição Granulométrica")
 colg1, colg2 = st.columns([1, 2])
 colg1.dataframe(granulometria_df, hide_index=True)
 fig, ax = plt.subplots(figsize=(7, 3))
@@ -51,7 +51,7 @@ classificacoes_df = pd.DataFrame({
 })
 
 # === Gráfico de pizza das classificações ===
-st.markdown("## 🥧 Classificação dos Componentes da Amostra")
+st.markdown(" 🥧 Classificação dos Componentes da Amostra")
 colp1, colp2 = st.columns([1,2])
 colp1.dataframe(classificacoes_df, hide_index=True)
 
