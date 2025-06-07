@@ -1,24 +1,3 @@
-# === Configuração da página ===
-st.set_page_config(
-    page_title="Apresentação - Controle de Qualidade Cavaco Biomassa",
-    layout="wide",
-    page_icon="🌳"
-)
-
-# === Dados principais ===
-dados_principais = {
-    "Data": "07/06/2025",
-    "Responsável": "José Moraes Bernardo",
-    "Turno": "B",
-    "Fornecedor": "JUNGES & BOHN",
-    "Densidade (g)": 344.09,
-    "Peso da Amostra (g)": 3938.92,
-    "% de Casca": 15.40,
-    "Umidade (%)": 49.05
-}
-
-# === Resumo em texto ===
-st.markdown("""
 # 🌳 Controle de Qualidade - Cavaco para Biomassa  
 ### Fornecedor: **JUNGES & BOHN**  
 ---
